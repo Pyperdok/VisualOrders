@@ -1,0 +1,154 @@
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+<TableLayout
+    android:id="@+id/TB_Order"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:layout_marginHorizontal="5dp"
+    >
+
+        <TableRow
+            android:id="@+id/TR_OrderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TV_OrderID"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@color/transparent"
+                android:padding="8dp"
+                android:text="228"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/TV_OrderDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="12.02.2022\n18:30"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/IB_OrderSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/transparent"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:src="@drawable/outline_settings_48"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </TableRow>
+    <TableRow android:id="@+id/TR_OrderCashier">
+
+        <TextView
+            android:id="@+id/TV_Cashier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="5dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="Кассир"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TV_CashierName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:paddingLeft="10dp"
+            android:text="Житов Егор Алексеевич"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+    </TableRow>
+        <TableRow
+            android:id="@+id/TR_OrderState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/TV_OrderState"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:layout_weight="1"
+                android:background="@color/yellow"
+                android:gravity="center_horizontal"
+                android:text="Обработка"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </TableRow>
+            <TableRow android:id="@+id/TR_OrderProducts">
+<!--                <TextView-->
+<!--                    android:id="@+id/TV_Count"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_column="0"-->
+<!--                    android:background="@color/sky1"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="99"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp" />-->
+<!--    -->
+<!--                <TextView-->
+<!--                    android:id="@+id/TV_Product"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_column="1"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@color/sky1"-->
+<!--                    android:paddingLeft="10dp"-->
+<!--                    android:text="Пицца"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp" />-->
+
+            </TableRow>
+<!--        <TableRow android:id="@+id/TR_OrderProducts2">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/TV_Count2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_column="0"-->
+<!--                android:background="@color/sky2"-->
+<!--                android:gravity="center"-->
+<!--                android:text="99"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/TV_Product2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_column="1"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@color/sky2"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:text="Пицца"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+<!--        </TableRow>-->
+
+    </TableLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white"/>
+</merge>
